@@ -48,7 +48,7 @@ for n = 1:100
     tempC = tempC + (int64(tC_low(2)));
     tempC = bitsrl(tempC, 5);
     temp_C = double(tempC);
-    temp_C = (temp_C * 0.0078125);
+    temp_C = (temp_C * 0.0078125);  %Fator de conversão para termopar tipo K e temperatura em graus Celsius
     addpoints(h, n, temp_C);
     drawnow limitrate
 end
